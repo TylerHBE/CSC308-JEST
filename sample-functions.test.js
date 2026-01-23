@@ -38,3 +38,10 @@ test('Testing containsNumbers -- non-regular characters', () => {
   const result = myFunctions.containsNumbers(text);
   expect(target).toBe(result);
 });
+
+test('Testing containsNumbers -- number at end of string', () => {
+  const target = true;
+  const text = "Wow this is a great string 9";
+  const result = myFunctions.containsNumbers(text);
+  expect(target).toBe(result);
+});
