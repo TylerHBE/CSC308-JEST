@@ -18,6 +18,10 @@ test('Testing div -- zeroes', () => {
   expect(target).toBe(result);
 });
 
+test('Testing div -- div by zero', () => {
+  expect(() => myFunctions.div(2, 0)).toThrow();
+});
+
 test('Testing containsNumbers -- Basic', () => {
   const target = true;
   const text = "There are 3000 apples";
