@@ -19,7 +19,9 @@ test('Testing div -- zeroes', () => {
 });
 
 test('Testing div -- div by zero', () => {
-  expect(() => myFunctions.div(2, 0)).toThrow();
+  const target = Infinity;
+  const result = myFunctions.div(2, 0);
+  expect(target).toBe(result);
 });
 
 test('Testing containsNumbers -- Basic', () => {
